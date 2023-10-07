@@ -3775,7 +3775,7 @@ def prepare_accelerator(args: argparse.Namespace):
     accelerator = Accelerator(
         gradient_accumulation_steps=args.gradient_accumulation_steps,
         mixed_precision=args.mixed_precision,
-        log_with=log_with,
+        # log_with=log_with,
         # project_dir=logging_dir,
     )
     return accelerator
